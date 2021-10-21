@@ -1,0 +1,123 @@
+.heady
+{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.747);
+    height: 80px;
+    width: 101%;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -10px;
+    align-items: center;
+}
+.btn 
+{
+    /*dimension*/
+    height: 40px;
+    width: auto;
+    /*fonts*/
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    /*margin and paddings*/
+  
+    margin-top: 15px;
+    background-color: transparent;
+    padding:none ;
+    /*position*/
+    position: absolute;
+    /*decorations*/
+    border-top:5px solid transparent ;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    
+    text-decoration: none;
+    color: rgb(126, 126, 126);
+}
+.btn:hover
+{
+    border-top:3px solid orange;
+    text-decoration: none;
+}
+.banner
+{
+    background-image: url(assets/Untitled_design__16_-removebg-preview.png);
+    height: 70px;
+    width: 257px;
+    background-repeat: no-repeat;
+    
+    color: black;
+    font-size: larger;
+    background-size: contain;
+    z-index: 2;
+    margin-top: 0%;
+    position: fixed;
+    margin-left: 25px;
+    top: 2px;
+}
+.multibtn
+{
+    display: none;
+}
+.menubox
+{
+    display: none;
+}
+@media screen and (max-width:960px) {
+    .btn
+    {
+        display: none;
+    }
+    .multibtn
+    {
+        display:block;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        background-image: url(assets/Untitled_design__23_-removebg-preview.png);
+        background-size: cover;
+        float: right;
+        right: 30px;
+        top: 10px;
+        border: none;
+        z-index: 3;
+    }
+    .menubox
+    {
+        display: block;
+        height: 204px;
+        width: 110%;
+        margin-left: -10px;
+        margin-right: -10px;
+        position: absolute;
+        z-index: 0;
+        background-color: rgba(226, 226, 226, 0.822);
+        top: 80px;
+        color: orange;
+        border-bottom: 2px solid orange;
+        border-radius:5px;
+    }
+    .menubox > a
+    {
+        display: block;
+        height: 50px ;
+        width: 110%;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-bottom: 2px solid orange;
+        border-radius:5px;
+        position: relative;
+        font-size: 35px;
+        text-decoration: none;
+        text-align: center;
+        color: rgb(179, 116, 0);
+   
+    }
+    .menubox > a:hover
+    {
+        background-color: rgba(226, 226, 226, 0.863);
+    }
+
+}

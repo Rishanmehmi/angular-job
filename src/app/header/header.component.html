@@ -1,0 +1,35 @@
+<script>
+    function kree()
+    {
+        var X = document.getElementById('menubo').style.display;
+        if(X='block')
+        {
+            X= 'none';
+            return X;
+        }
+        else if(X = 'none')
+        {
+            X = 'block';
+            return X;
+        }
+    }
+</script>
+
+<div class="heady">
+    
+    <button  class="btn" style="margin-left: 350px;" id="ghar" routerLink = "./Home"  routerLinkActive = "active">Home</button>
+    <button  class="btn" style="margin-left: 500px;" routerLink = "/jobs" routerLinkActive = "active" >Jobs</button>
+    <button  class="btn" style="margin-left: 650px;" routerLinkn = "./" >Employer's Portal</button>
+    <button  class="btn" style="margin-left: 850px;" ></button>
+    <button class="multibtn" onbuttonclick="kree();" >&nbsp;</button>
+    
+</div>
+<div class="banner" routerLink = './Home'>
+    &nbsp;
+</div>
+<div class="menubox" id="menubo">
+    <a href="./">Home</a>
+    <a href="./jobs">Applies</a>
+    <a href="./">Applications</a>
+    <a href="./">Postings</a>
+</div>
